@@ -13,6 +13,7 @@ const typeConfig = (): TypeOrmModuleOptions => {
     database: process.env.APP_DATABASE,
     entities: ['dist/**/*.entity{.ts,.js}'],
     synchronize: true,
+    logging: true,
   };
 };
 export const typeOrmConfig: TypeOrmModuleOptions = typeConfig();
